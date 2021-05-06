@@ -46,7 +46,7 @@ img {
     margin-bottom: 25px;
 }
 
-.img-subtitle {
+.img-subtitle, .img-subtitle > a {
     text-align: center;
     font-size: 14px;
     line-height: 20px;
