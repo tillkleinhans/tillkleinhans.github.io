@@ -56,14 +56,6 @@ p {
     padding: 25px 0px;
 }
 
-.icon {
-    width: 15px;
-    max-width: 15px;;
-    height: 15px;
-    max-height: 15px;;
-    object-fit: contain;
-}
-
 .subtitle {
     font-weight: 400;
 }
