@@ -50,7 +50,7 @@ footerTemplate.innerHTML = `
                     LinkedIn
                 </div>
             </a>
-            <a>Imprint</a>
+            <a href="./imprint.html">Imprint</a>
         </div>
     </footer>
 `;
