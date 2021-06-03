@@ -2,7 +2,7 @@ const headerTemplate = document.createElement('template');
 headerTemplate.innerHTML = `
     <style>
         header {
-            margin: 48px 0px;
+            margin: 36px 0px;
         }
 
         a {

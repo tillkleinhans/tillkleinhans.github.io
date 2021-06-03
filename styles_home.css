@@ -3,19 +3,25 @@
 
 html, a {
     font-family: 'Roboto', sans-serif;
-    font-size: 19px;
+    font-size: 20px;
     line-height: 1.3;
     color:#212121;
     text-decoration: none;
 }
 
+body {
+    max-width: 840px;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
 section, footer-component {
-    margin-top: 150px;
+    margin-bottom: 60px;
 }
 
 img {
     width: 100%;
-    max-height: 75vh;
+    /*max-height: 75vh;*/
     object-fit: contain;
 }
 
@@ -25,44 +31,48 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-    font-size: 2.4rem;
+    font-size: 2rem;
+    margin-bottom: 24px;
 }
 
 h2 {
-    font-size: 2rem;
-}
-
-h3 {
     font-size: 1.6rem;
 }
 
-h4 {
+h3 {
     font-size: 1.25rem;
 }
 
 p {
     line-height: 1.7;
+    margin-bottom: 24px;
 }
 
-.page-container {
-    max-width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+.img-container {
+    margin: 25px 0px;
 }
 
 .hero-img {
-    padding: 25px 0px;
+    margin: 0 -100vw;
+    margin-bottom: 60px;
+    padding: 25px 100vw;
+}
+
+.hero-img img {
+    max-height: 450px;
 }
 
 .subtitle {
     font-weight: 400;
 }
 
-.overview {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+.overview-title {
+    text-transform: uppercase;
+    color: #999;
+}
+
+.no-margin {
+    margin: 0px;
 }
 
 .details {
@@ -86,7 +96,16 @@ p {
 }
 
 .landing-page {
-    background-color: #E4F2AA;
+    background-color: #FFEE61;
+}
+
+.overview-details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.overview-text {
+    margin-bottom: 36px;
 }
 
 .case-img {
@@ -107,11 +126,6 @@ p {
 
 .hackathon {
     background-color: #71CA8A;
-}
-
-.img-container {
-    margin-top: 25px;
-    margin-bottom: 25px;
 }
 
 @media only screen and (max-width: 600px) {
