@@ -1,4 +1,4 @@
-const footerTemplate = document.createElement('template');
+const footerTemplate = document.createElement('template'); //TODO: remove if unnecessary
 
 class Footer extends HTMLElement {
     constructor() {

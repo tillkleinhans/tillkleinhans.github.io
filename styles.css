@@ -142,51 +142,69 @@ p {
     grid-template-columns: repeat(3, 1fr);
 }
 
+.grey-bg {
+    background-color: #F2F2F2;
+} 
+
+/* Case teasers */
+
 .case {
     height: 350px;
     display: grid;
-    grid-template-columns: 2fr 3fr;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    grid-template-columns: 1fr 2fr;
+    border-radius: 6px;
+    margin-bottom: 24px;
 }
 
 .case-text {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-left: 30px;
+    padding: 0px 48px;
+}
+
+.case-title {
+    font-size: 2rem;
+    line-height: 1.3;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.case-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin-bottom: 0px;
 }
 
 .landing-page {
     background-color: #4690FC;
 }
 
-.grey-bg {
-    background-color: #F2F2F2;
-} 
-
 .case-img {
     background-repeat: no-repeat;
     background-position-x: right;
-    background-position-y: center;
     text-indent: -99999;
-    background-size: auto 320px;
 }
 
 .landing-page .case-img {
+    background-position-y: center;
     background-image: url("source/landing-page/lp-teaser.png");
+    background-size: auto 100%;
+    margin: 24px 0px;
+    object-fit: contain;
+
 }
 
 .hackathon .case-img {
-    background-image: url("source/hackathon_teaser.png");
+    background-position-y: top;
+    margin-top: 24px;
+    background-image: url("source/hackathon/hackathon-teaser.png");
+    background-size: 228px auto;
+    /*justify-self: end;*/
 }
 
 .hackathon {
     background-color: #FEE236;
-}
-
-.teaser-subtitle {
-    font-size: 1.25rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -196,21 +214,35 @@ p {
     
     .case {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 3fr 7fr;
+    }
+
+    .case-title {
+        font-size: 1.25rem;
     }
 
     .case-text {
         text-align: center;
         grid-row: 1/2;
+        padding: 18px 6px 0px 6px;
+        justify-content: start;
     }
 
     .case-img {
         grid-row: 2/3;
         background-repeat: no-repeat;
-        background-position-x: center;
         background-position-y: top;
         text-indent: -99999;
-        background-size: 150px auto;
+    }
+
+    .landing-page .case-img {
+        /*background-size: 226px auto;*/
+        background-position-x: right;
+        margin-right: 18px;
+    }
+
+    .hackathon .case-img {
+        background-position-x: center;
     }
 
     .overview {
