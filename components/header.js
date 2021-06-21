@@ -9,7 +9,7 @@ class Header extends HTMLElement {
         this.innerHTML = `  
             <header>
                 <div class="section-content">
-                    <a href="http://tillkleinhans.com/">Till Kleinhans – Product Designer</a>
+                    <a href="./index.html">Till Kleinhans – Product Designer</a>
                 </div>
             </header>
         `;

@@ -8,124 +8,157 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
 </head>
 <body>
-    <div class="page-container">
-        <!--<a href="/index.html">back</a>-->
-        <header>
-            <!-- TODO: nav -->
-            <div class="header-left">
-                <h1>(No) data science hackathon</h1>
 
-                <p>
-                    In 2019, I teamed up with my computer science classmates Cedrik Harrich and Yannick Weber to compete for 5000€ in prize money at a data science hackathon. We did not have any data science experience so far – unlike our competitors. Nevertheless, we managed to come in second place, beat 14 of 15 teams and win 1500€. Here is how we did it.
-                </p>
+    <header-component></header-component>
 
-                <p>
-                    Keywords: ideation, pitch, value proposition, hackathon, IoT
-                </p>
-            </div>
-            <div class="header-right">
-                <div class="img-container">
-                    <img src="./source/team_cheque.JPG" alt="" /> <!--TODO-->
-                    <p class="img-subtitle">Three proud non-data scientists raising the prize for second place</p>
-                </div>
-            </div>
-        </header>
-
-        <!--<p class="h1-subtitle">Subtitle for h1</p>-->
-    
-        <h3>Challenge</h3>
-        <p>
-            The energy company E.ON was searching for new product ideas for its customer solution branch, and provided us with a dataset collected by a variety of sensors in a family home and 48 hours to pitch our best idea.
-        </p>
-    
-        <h3>Team & my role</h3>
-        <p>
-            I teamed up with my computer science classmates Cedrik Harrich and Yannick Weber.
-            I was team lead and led our team through the ideation and concept creation process, involved the stakeholders and designed the pitch. Besides the concept creation, Cedrik looked into viability and market sizes, while Yannick validated the technical feasibility and conducted an expert interview with a midwife friend.
-        </p>
-
-        <h2>Process</h2>
-
-        <p>
-            While the other teams started implementing an idea right away, we invested most of our time into finding the right idea for E.ON and its customers.
-        </p>
-
-        <h3>Discover quick ideas</h3>
-        <p>
-            We started by looking at the capabilities of the various sensors and brainstorming how customers might benefit from them. Individually, we collected and visualized as many quick ideas as possible by using sticky notes and collecting them on a whiteboard. To keep the momentum going, I convinced Cedrik and Yannick to defer judging the ideas to a later phase, and applied ideation methods to our brainstorming.<!-- This gave us the largest possible pool of ideas to choose from.-->
-        </p>
-
-        <div class="img-container">
-            <img src="./source/till_board.jpg" alt="" />
-        </div>
-
-        <!--
-        <div class="img-container">
-            <img src="./source/whiteboard_useCases.JPG" alt="" />
-        </div>
-        -->
-    
-        <h3>Explore use cases</h3>
-        <p>
-            We got together to cluster related ideas and create use cases from them<!-- such as "monitor people", "enhance living" and "balance power grid"-->. Next, we involved business and technical stakeholders of E.ON in our group discussion in order to evaluate the desirability and viability as well as the technical feasibility of our ideas. Then we polled for the best use cases to further develop them into product ideas.
-        </p>
-    
-        <h3>Develop product solutions</h3>
-        <p>
-            We took the top three use cases from our poll and discussed potential product solutions for them. The Business Model Canvas helped us to consider all relevant aspects in the solution and to create comprehensive product concepts. Before deciding on a product for our pitch, we involved the business stakeholder from E.ON one more time to validate that we will present the best solution for E.ON and its customers.
-        </p>
-
-        <h2>We present: The enhanced baby monitor</h2>
-
-        <div class="img-container">
-            <img src="./source/Pitch_teaser.jpg" alt="" />
-            <p class="img-subtitle">Our idea: Enhance a baby monitor with E.ON's sensor set.<br>Camera picture by <a class="img-subtitle-link" href="https://store.google.com/de/product/nest_cam_iq" target="_blank">Google Nest</a></p>
-        </div>
-
-        <p>
-            Our IoT-enhanced baby monitor helps parents take the best care of their baby by showing them new sensor data about their baby and its environment, and alerting them via their smartphones in case of emergency.
-        </p>
-
-        <h3>Sudden infant death syndrome</h3>
-
-        <p>
-            For new parents, there is nothing more important than their baby, and they would do anything to keep it safe and healthy. But there is something they are helpless against and horrified of: Sudden infant death syndrome (SIDS) is the sudden and unexplained death of a baby younger than 1 year old. The causes for SIDS remain vastly unknown, but one of the few known factors increasing the risk for SIDS is heat accumulation.
-        </p>
-
-        <div class="img-container">
-            <img src="./source/hackathon_thermalAlert.png" alt="">
-        </div>
-
-        <p>
-            Until now, baby monitors cannot detect heat accumulations because they (if at all) only monitor general room temperature. We want to change this by implementing E.ON's sensor set in a baby monitor and pairing it with an app. This enhanced baby monitor can detect heat accumulations with its thermal camera and alert the parents via their smartphone so they can prevent bad things from happening.
-        </p>
-
-        <h3>But there's more</h3>
-
-        <p>
-            The enhanced baby monitor also supervises the baby's sleep cycle, expressed through movement and sounds, and the room's temperature, humidity, CO2 concentration, and the amount of potentially hazardous volatile organic components (TVOC) in the air. Parents can thus ensure the perfect environmental conditions for the baby, and learn under which conditions their baby sleeps best. The device can even detect a full diaper with its TVOC sensor, and notify you on your smartphone – then you already know why your baby is crying before you go check.
-        </p>
-
-        <div class="img-container">
-            <img src="./source/Hackathon-app.png" alt="" />
-        </div>
-
-        <p>
-            All these sensor data will be transmitted by Bluetooth Low Energy, the low-radiation standard used in the best baby monitors on the market, so parents don't have to worry about potential harms of the additional sensors.
-        </p>
-
-        <h2>Business perspective</h2>
-
-        <p>
-            There's a big market potential for our IoT enhanced baby monitor: First, smart appliances in general are the largest segment in the IoT market prognosis. And second, age 25 to 34 is not only common for starting a family, but it's also the largest IoT customer segment by age.
-        </p>
-
-        <p>
-            E.ON is able to produce and distribute the baby monitor: It already produced the sensor board just for the hackathon, it has strategic partnerships with smart home companies like nest, and it's already selling smart home devices through its own online shop. The enhanced baby monitor would not be so expensive, as the sensor board was produced at a cost per unit of 4$. It could be used to attract new families and convince them to choose E.ON as its energy provider. (Customer groups could be expanded to pet owners.)
-        </p>
-
-        <h2>Learnings</h2>
+    <div class="hero-img hackathon">
+        <img class="hero-shadow" src="./source/hackathon/hackathon-teaser.png" alt="" />
     </div>
+
+    <section>
+        <div class="section-content">
+            <h1>Winning with ideation</h1>
+
+            <div class="overview">
+
+                <div class="overview-text">
+                    <p>
+                        In 2019, I teamed up with two computer science classmates Cedrik Harrich and Yannick Weber to compete for 5000€ in prize money at a data science hackathon. We did not have any data science experience so far – unlike our competitors. Nevertheless, we managed to come in second place, beat 14 of 15 teams and win 1500€. Here is how we did it.    
+                    </p>
+                </div>
+
+                <div class="overview-details">
+                    <div>
+                        <p class="overview-title no-margin">Role</p>
+                        <p class="no-margin">Team lead,<br />UX/UI designer</p>
+                    </div>
+                    <div>
+                        <p class="overview-title no-margin">Team</p>
+                        <p class="no-margin">Cedrik Harrich,<br />Yannick Weber</p>
+                    </div>
+                    <div>
+                        <p class="overview-title no-margin">Time</p>
+                        <p class="no-margin">April 2018</p>
+                    </div>
+                </div>
+
+                <!-- TODO: Keywords ideation, pitch, value proposition, hackathon, IoT -->
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-content">
+            <h2>Challenge</h2>
+            <p>
+                The energy company E.ON was searching for new product ideas for its customer solution branch, and provided us with a dataset collected by a variety of sensors in a family home and 48 hours to pitch our best idea.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-content">
+            <h2>Process</h2>
+            <p>
+                While the other teams started implementing an idea right away, we invested most of our time into finding the right idea for E.ON and its customers.
+            </p>
+
+            <h3>Discover quick ideas</h3>
+            <p>
+                We started by looking at the capabilities of the various sensors and brainstorming how customers might benefit from them. Individually, we collected and visualized as many quick ideas as possible by using sticky notes and collecting them on a whiteboard. To keep the momentum going, I convinced Cedrik and Yannick to defer judging the ideas to a later phase, and applied ideation methods to our brainstorming.<!-- This gave us the largest possible pool of ideas to choose from.-->
+            </p>
+
+            <img src="./source/hackathon/till_board.jpg" alt="" />
+
+            <h3>Explore use cases</h3>
+            <p>
+                We got together to cluster related ideas and create use cases from them<!-- such as "monitor people", "enhance living" and "balance power grid"-->. Next, we involved business and technical stakeholders of E.ON in our group discussion in order to evaluate the desirability and viability as well as the technical feasibility of our ideas. Then we polled for the best use cases to further develop them into product ideas.
+            </p>
+        
+            <h3>Develop product solutions</h3>
+            <p>
+                We took the top three use cases from our poll and discussed potential product solutions for them. The Business Model Canvas helped us to consider all relevant aspects in the solution and to create comprehensive product concepts. Before deciding on a product for our pitch, we involved the business stakeholder from E.ON one more time to validate that we will present the best solution for E.ON and its customers.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-content">
+            <h2>We present: The enhanced baby monitor</h2>
+
+            <div class="img-container">
+                <img src="./source/Pitch_teaser.jpg" alt="" />
+                <p class="img-subtitle">Our idea: Enhance a baby monitor with E.ON's sensor set.<br>Camera picture by <a class="img-subtitle-link" href="https://store.google.com/de/product/nest_cam_iq" target="_blank">Google Nest</a></p>
+            </div>
+
+            <p>
+                Our IoT-enhanced baby monitor helps parents take the best care of their baby by showing them new sensor data about their baby and its environment, and alerting them via their smartphones in case of emergency.
+            </p>
+
+            <h3>Sudden infant death syndrome</h3>
+
+            <p>
+                For new parents, there is nothing more important than their baby, and they would do anything to keep it safe and healthy. But there is something they are helpless against and horrified of: Sudden infant death syndrome (SIDS) is the sudden and unexplained death of a baby younger than 1 year old. The causes for SIDS remain vastly unknown, but one of the few known factors increasing the risk for SIDS is heat accumulation.
+            </p>
+
+            <div class="img-container">
+                <img src="./source/hackathon_thermalAlert.png" alt="">
+            </div>
+
+            <p>
+                Until now, baby monitors cannot detect heat accumulations because they (if at all) only monitor general room temperature. We want to change this by implementing E.ON's sensor set in a baby monitor and pairing it with an app. This enhanced baby monitor can detect heat accumulations with its thermal camera and alert the parents via their smartphone so they can prevent bad things from happening.
+            </p>
+
+            <h3>But there's more</h3>
+
+            <p>
+                The enhanced baby monitor also supervises the baby's sleep cycle, expressed through movement and sounds, and the room's temperature, humidity, CO2 concentration, and the amount of potentially hazardous volatile organic components (TVOC) in the air. Parents can thus ensure the perfect environmental conditions for the baby, and learn under which conditions their baby sleeps best. The device can even detect a full diaper with its TVOC sensor, and notify you on your smartphone – then you already know why your baby is crying before you go check.
+            </p>
+
+            <div class="img-container">
+                <img src="./source/Hackathon-app.png" alt="" />
+            </div>
+
+            <p>
+                All these sensor data will be transmitted by Bluetooth Low Energy, the low-radiation standard used in the best baby monitors on the market, so parents don't have to worry about potential harms of the additional sensors.
+            </p>
+        </div>
+    </section>
+    
+    <section>
+        <div class="section-content">
+            <h2>Business perspective</h2>
+
+            <p>
+                There's a big market potential for our IoT enhanced baby monitor: First, smart appliances in general are the largest segment in the IoT market prognosis. And second, age 25 to 34 is not only common for starting a family, but it's also the largest IoT customer segment by age.
+            </p>
+
+            <p>
+                E.ON is able to produce and distribute the baby monitor: It already produced the sensor board just for the hackathon, it has strategic partnerships with smart home companies like nest, and it's already selling smart home devices through its own online shop. The enhanced baby monitor would not be so expensive, as the sensor board was produced at a cost per unit of 4$. It could be used to attract new families and convince them to choose E.ON as its energy provider. (Customer groups could be expanded to pet owners.)
+            </p>
+        </div>
+    </section>
+
+    <!-- TODO: Learnings? -->
+
+    <section>
+        <div class="section-content">
+            <p>Next case:</p>
+            <a class="case landing-page" href="./landing-page.html">
+                <div class="case-img hero-shadow">The redesigned landing page of CHECK24 Versicherungscenter on both a desktop and mobile device</div>
+                <div class="case-text">
+                    <p class="case-title">Responsive landing page</p>
+                    <p class="case-subtitle">CHECK24 insurance center</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer-component></footer-component>
+
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
 
 </body>
 </html>
