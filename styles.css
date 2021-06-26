@@ -64,6 +64,10 @@ p {
     margin-bottom: 24px;
 }
 
+mark {
+    background-color: #D9E8FF;
+}
+
 .section-content, footer {
     max-width: 840px;
     margin: 0px auto;
@@ -73,6 +77,10 @@ p {
 
 .p-highlight {
     font-size: 1.25rem;
+}
+
+.desktop-only {
+    display: inherit;
 }
 
 .img-highlight {
@@ -121,6 +129,19 @@ p {
 .overview-details {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.overview-detail {
+    margin-bottom: 0px;
+}
+
+.overview-detail p {
+    margin: 0px;
+}
+
+.overview-detail .title {
+    margin-bottom: 8px;
 }
 
 .overview-text {
@@ -251,6 +272,10 @@ p {
         text-indent: -99999;
     }
 
+    .desktop-only {
+        display: none;
+    }
+
     .landing-page .case-img {
         /*background-size: 226px auto;*/
         background-position-x: right;
@@ -263,6 +288,19 @@ p {
 
     .overview {
         display: inline-block;
+    }
+
+    .overview-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .overview-detail {
+        margin-bottom: 24px;
+    }
+
+    .overview-detail:last-child {
+        margin-bottom: 0px;
     }
 
     .footer-links {
