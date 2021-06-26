@@ -127,6 +127,18 @@ p {
     margin-bottom: 36px;
 }
 
+.title {
+    font-size: 0.75rem;
+    line-height: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    color: #5f6368;
+}
+
+.text-block {
+    display: inline-block;
+}
+
 .no-margin {
     margin: 0px;
 }
@@ -259,7 +271,7 @@ p {
     }
 
     .footer-link {
-        margin-bottom: 6px;
+        margin: 0px 0px 6px 0px;
     }
 
 }
