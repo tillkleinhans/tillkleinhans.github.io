@@ -9,6 +9,10 @@ html, a {
     overflow-x: hidden;
 }
 
+body {
+    margin: 0px;
+}
+
 section {
     padding-top: 48px;
     padding-bottom: 60px;
@@ -24,7 +28,6 @@ footer {
     text-align: center;
     padding-bottom: 36px;
 }
-
 
 footer a {
     margin: 0px 12px;
@@ -113,16 +116,18 @@ mark {
 }
 
 .hero-img {
-    margin: 0 -100vw;
+    /*margin: 0 -100vw;*/
     clip-path: inset(100% 100%);
 }
 
 .hero-img.hackathon {
-    padding: 25px calc(100vw + 25px) 0px calc(100vw + 25px);
+    /*padding: 25px calc(100vw + 25px) 0px calc(100vw + 25px);*/
+    /*padding: 25px 20px 0px 20px;*/
+    padding-top: 25px;
 }
 
 .hero-img.landing-page{
-    padding: 25px calc(100vw + 25px);
+    padding: 25px 0px;
 }
 
 .hero-img img {
