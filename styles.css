@@ -259,6 +259,34 @@ mark {
     background-color: #FEE236;
 }
 
+.sensors {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.sensor-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.sensor-icon{
+    width: 48px;
+    height: 48px;
+    margin-right: 6px;
+}
+
+.sensor-name {
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 880px) {
+    .sensors {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media only screen and (max-width: 600px) {
     header {
         margin: 30px 0px;
@@ -331,6 +359,10 @@ mark {
 
     .footer-link {
         margin: 0px 0px 6px 0px;
+    }
+
+    .sensors {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
