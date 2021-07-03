@@ -116,13 +116,10 @@ mark {
 }
 
 .hero-img {
-    /*margin: 0 -100vw;*/
-    clip-path: inset(100% 100%);
+    clip-path: inset(0 0);
 }
 
 .hero-img.hackathon {
-    /*padding: 25px calc(100vw + 25px) 0px calc(100vw + 25px);*/
-    /*padding: 25px 20px 0px 20px;*/
     padding-top: 25px;
 }
 
