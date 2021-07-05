@@ -267,14 +267,24 @@ mark {
 }
 
 .sensors {
+    /*
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
 .sensor-container {
+    width: 140px;
     display: flex;
     align-items: center;
-    margin-bottom: 12px;
+    /*
+    padding: 6px;
+    background-color: white;
+    border-radius: 5px;
+    */
 }
 
 .sensor-icon{
@@ -287,12 +297,14 @@ mark {
     font-size: 15px;
 }
 
+/*
 @media only screen and (max-width: 880px) {
     .sensors {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 }
+*/
 
 @media only screen and (max-width: 600px) {
     header {
@@ -368,8 +380,9 @@ mark {
         margin: 0px 0px 6px 0px;
     }
 
+    /*
     .sensors {
         grid-template-columns: repeat(2, 1fr);
     }
-
+    */
 }
