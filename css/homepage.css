@@ -1,0 +1,32 @@
+/* Apply global font */
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.intro {
+    margin-top: 82px;
+}
+
+.intro p {
+    margin-top: 20px;
+}
+
+button {
+    color: #000;
+    background-color: #fff;
+}
+
+article {
+    border-color: white;
+}
+
+.article-image {
+    border-color: white;
+}
+
+/* footer {
+    font-size: 0.8em;
+    text-align: center;
+    color: #aaa;
+} */
