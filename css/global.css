@@ -16,7 +16,7 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
-p {
+p, li {
     font-family: 'IBM Plex Serif', serif;
     font-size: 1em;
 }
@@ -60,9 +60,9 @@ h2 {
     font-size: 1.6em;
 }
 
-h3 {
+/* h3 {
     font-size: 1.2em;
-}
+} */
 
 h4 {
     font-size: 1em;

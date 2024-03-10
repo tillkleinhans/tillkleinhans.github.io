@@ -3,9 +3,10 @@
     <head>
         <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title></title>
+<title>Automotive App Case Study – Till Kleinhans</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,600,700|IBM+Plex+Serif:400,400i,700&display=swap">
 <link rel="stylesheet" href="/css/global.css">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
         
     <meta name="description" content="" /> <!-- TODO: Description -->
     <link rel="stylesheet" href="/css/project.css">
@@ -23,23 +24,51 @@
 </div>
 <!--<p class="description nda">(This project is under NDA, its content is generalized)</p>-->
 <h2>Situation</h2>
-<p>As a UX designer for an automotive mobile app, I was part of 2 client feature teams embedded in our client's organization. One of the teams handled the feature that enables users to update their car's firmware themself – a process that spares our client the costly process of updating cars for their users in a workshop, but one that was facing usability challenges. Now, cars of the newest generation were sharing more information about the update process, which should be reflected in the mobile app.</p>
-<h2>Task</h2>
-<p>Extend feature with new functionality. The feature should be ready for the pre-Christmas testing with upper management in 12 weeks. PO is worried about time pressure &amp; pushes for a UX concept that he created.</p>
-<h2>(Action)</h2>
-<h4>Complete design brief</h4>
+<p>As a UX designer, I was working in 2 feature teams in a project for a German car company and its mobile app. One team owned the feature to update the car's firmware via phone, and the latest generation cars enabled the starting and following installations by phone – a process that should be designed and implemented in the companion app.</p>
+<!-- ## Task
+I should extend the update feature's user experience to enable users to start an installation and follow its status in the mobile app.
+
+This new functionality had moderate time pressure, as it should be live for "Christmas Testing" where all feature teams showcase their work to senior management of other departments. To speed up the process, the team's product owner Matthias already created a UX concept based on the technical state diagram, for fastest-possible implementation. -->
+<h2>Firmware updates: Counter-intuitive?</h2>
+<p>There are 3 ways for customers to update their car's firmware, with different cost implications for the manufacturer.</p>
+<p><img src="/assets/installation-option-I.png" alt="&lt;!-- TODO alt text --&gt;"></p>
+<h4>I – Download to phone &amp; transfer to car</h4>
+<p>Albeit not being straightforward, this is the standard method for the manufacturer, as it uses the phone's Wi-Fi connection and does not come with extra costs.</p>
+<p><img src="/assets/installation-option-II.png" alt="&lt;!-- TODO alt text --&gt;"></p>
+<h4>II – Direct download to car</h4>
+<p>I expected this to be the standard method, and product analytics showed many users did so as well. It is more convenient for users, but it comes with an average of 5€ cellular costs per update for the manufacturer – amounting to more than 1 Million € due to the fleet's scale.</p>
+<p><img src="/assets/installation-option-III.png" alt="&lt;!-- TODO alt text --&gt;"></p>
+<h4>III – Installation in car workshop</h4>
+<p>As a fallback, firmware updates can be performed during workshop visits – causing 100€ extra cost per installation for the manufacturer.</p>
+<h2>(Clarifying the brief &amp; scope, starting with PO)</h2>
 <ul>
-<li>Understand UX concept proposed by PO → Extract what are hard requirements, what is negotiable proposal by PO</li>
-<li>What new vehicle info?</li>
-<li>Tech limitations</li>
+<li>
+<p>Moderate time pressure: Ready for &quot;christmas testing&quot;</p>
+</li>
+<li>
+<p>PO has bad experience with UX designers not understanding the more technically complex topics from his team</p>
+</li>
+<li>
+<p>Created UX concept himself, based on the technical state model</p>
+</li>
+<li>
+<p>Additionally: Usability challenges with existing feature</p>
+</li>
+<li>
+<p>Mixes new functionality, improvements for existing parts, hard tech requirements and his ideas that are TBD</p>
+</li>
+</ul>
+<p><img src="/assets/PO-concept.png" alt="&lt;!-- TODO alt text --&gt;"></p>
+<ul>
+<li>Gather exactly what new car info is accessible where</li>
+<li>Gather technical limitations with PO &amp; software developers</li>
 </ul>
 <h4>Challenge: Collaboration with PO</h4>
 <ul>
-<li>PO does not want to waste time</li>
-<li>No trust yet, therefore pushes for own concept</li>
 <li>Solution: Attune to PO's technical perspective, immer wieder auf Biz &amp; Customer goals (= why we should do this) beziehen, Arbeitsstände teilen um PO's Vertrauen zu bekommen = er sieht dass etwas vorangeht</li>
 </ul>
-<h4>Redo concept</h4>
+<h2>(Usability improvements for existing part)</h2>
+<h2>(New functionality + refactoring PO concept)</h2>
 <ul>
 <li>Highlight usability challenges in PO concept</li>
 <li>What are tech limitations? → Ask PO &amp; dev
@@ -50,8 +79,6 @@
 </li>
 <li>Collaborate with UI designer to create coherent user flow visuals + take opportunity &amp; fix usability problems in existing part (connection from phone to car) → Low-hanging fruit</li>
 </ul>
-<h4>Tech side: What is the new functionality, what are limitations?</h4>
-<h4>Analyze UX concept proposed by PO</h4>
 <article>
     <div class="article-image">
         <img class="article-img" src="/assets/gradient-p1.jpg" alt="" />
