@@ -23,62 +23,65 @@
     </span>
 </div>
 <!--<p class="description nda">(This project is under NDA, its content is generalized)</p>-->
-<h2>Situation</h2>
-<p>As a UX designer, I was working in 2 feature teams in a project for a German car company and its mobile app. One team owned the feature to update the car's firmware via phone, and the latest generation cars enabled the starting and following installations by phone – a process that should be designed and implemented in the companion app.</p>
-<!-- ## Task
-I should extend the update feature's user experience to enable users to start an installation and follow its status in the mobile app.
-
-This new functionality had moderate time pressure, as it should be live for "Christmas Testing" where all feature teams showcase their work to senior management of other departments. To speed up the process, the team's product owner Matthias already created a UX concept based on the technical state diagram, for fastest-possible implementation. -->
-<h2>Firmware updates: Counter-intuitive?</h2>
+<h2>Extending a cross-device feature</h2>
+<p>As a UX designer, I was working in 2 feature teams of our client, a German car company, improving their mobile app. One team owned the feature to update the car's firmware via phone, and the latest generation cars enabled the starting and following installations by phone – functionality that should be designed and implemented in the companion app.</p>
+<p><img src="/assets/feature-flow.png" alt="&lt;!-- TODO alt text --&gt;"></p>
+<p class="img-description">The firmware update flow should be extended with new functionality.</p>
+<h2>Creating a clear framing first</h2>
+<p>The start was confusing, as the product owner (PO) already created a UX concept to speed up the implementation, which also included some improvements. Not being familiar with the feature yet, I first sorted the information in:</p>
+<ul>
+<li>Business and customer goals</li>
+<li>Technical requirements for new functionality</li>
+<li>Ideas for new functionality</li>
+<li>Improvements for existing part</li>
+</ul>
+<p><img src="/assets/PO-concept.png" alt="&lt;!-- TODO alt text --&gt;"></p>
+<p class="img-description">Part of the UX concept prepared by my product owner</p>
+<h2>Fostering a productive relationship</h2>
+<p>I perceived that the PO's emphasis on speed prevented us to create the necessary UX quality, so I assessed his rationals for focusing on speed this much:</p>
+<ol>
+<li>Upcoming &quot;Christmas Testing&quot; where new functionality is showcased to senior management</li>
+<li>Delays caused by other designers in the past, who struggled with the team's highly-technical topics</li>
+<li>Loads of other features waited to be built</li>
+</ol>
+<p>The following activities reassured the PO of our progress, and unlocked a collaborative style of work:</p>
+<ul>
+<li>From the start, make progress visible to increase PO's trust: Requirements &amp; designs accessible on Confluence, weekly sharing sessions</li>
+<li>Collaborate closely with PO &amp; tech lead to understand technical limitations and possibilities</li>
+<li>Align on business and customer goals, and guide design discussions with them</li>
+</ul>
+<h2>Business context &amp; usability challenges</h2>
 <p>There are 3 ways for customers to update their car's firmware, with different cost implications for the manufacturer.</p>
 <p><img src="/assets/installation-option-I.png" alt="&lt;!-- TODO alt text --&gt;"></p>
 <h4>I – Download to phone &amp; transfer to car</h4>
 <p>Albeit not being straightforward, this is the standard method for the manufacturer, as it uses the phone's Wi-Fi connection and does not come with extra costs.</p>
 <p><img src="/assets/installation-option-II.png" alt="&lt;!-- TODO alt text --&gt;"></p>
 <h4>II – Direct download to car</h4>
-<p>I expected this to be the standard method, and product analytics showed many users did so as well. It is more convenient for users, but it comes with an average of 5€ cellular costs per update for the manufacturer – amounting to more than 1 Million € due to the fleet's scale.</p>
+<p>I expected this to be the standard method, and product analytics showed many users did so as well. While more convenient for users, it comes with an average of 5€ cellular costs per update for the manufacturer – amounting to more than 1 Million € due to the fleet's scale.</p>
 <p><img src="/assets/installation-option-III.png" alt="&lt;!-- TODO alt text --&gt;"></p>
 <h4>III – Installation in car workshop</h4>
 <p>As a fallback, firmware updates can be performed during workshop visits – causing 100€ extra cost per installation for the manufacturer.</p>
-<h2>(Clarifying the brief &amp; scope, starting with PO)</h2>
-<ul>
-<li>
-<p>Moderate time pressure: Ready for &quot;christmas testing&quot;</p>
-</li>
-<li>
-<p>PO has bad experience with UX designers not understanding the more technically complex topics from his team</p>
-</li>
-<li>
-<p>Created UX concept himself, based on the technical state model</p>
-</li>
-<li>
-<p>Additionally: Usability challenges with existing feature</p>
-</li>
-<li>
-<p>Mixes new functionality, improvements for existing parts, hard tech requirements and his ideas that are TBD</p>
-</li>
-</ul>
-<p><img src="/assets/PO-concept.png" alt="&lt;!-- TODO alt text --&gt;"></p>
-<ul>
-<li>Gather exactly what new car info is accessible where</li>
-<li>Gather technical limitations with PO &amp; software developers</li>
-</ul>
-<h4>Challenge: Collaboration with PO</h4>
-<ul>
-<li>Solution: Attune to PO's technical perspective, immer wieder auf Biz &amp; Customer goals (= why we should do this) beziehen, Arbeitsstände teilen um PO's Vertrauen zu bekommen = er sieht dass etwas vorangeht</li>
-</ul>
 <h2>(Usability improvements for existing part)</h2>
-<h2>(New functionality + refactoring PO concept)</h2>
 <ul>
-<li>Highlight usability challenges in PO concept</li>
-<li>What are tech limitations? → Ask PO &amp; dev
+<li></li>
+</ul>
+<h2>Evangelizing for usability</h2>
+<p>Copying the car's update flow, as in the PO's concept, to reduce implementation efforts entails UX problems: When starting an update in the car, installation blockers like a low battery or an open door are shown next so users can fix the issue.
+<img src="/assets/blueprint-car-only.png" alt="&lt;!--TODO: alt text --&gt;"></p>
+<p class="img-description">Installation states in the car</p>
+<p><img src="/assets/blueprint-PO-concept.png" alt="&lt;!--TODO: alt text --&gt;"></p>
+<p class="img-description">PO's concept based on technical state model</p>
+Blockers are not shown before starting an installation, which – in the mobile app – creates a disappointing experience when users see the "Start update" button and only learn after clicking that one of 16 issues is blocking the installation.
+<p>It was necessary to work closely together with the PO and tech lead to assess what is technically possible, and to convince the PO to invest into adjusting the technical flow albeit the time pressure, to achieve this small change in the user flow:
+<img src="/assets/blueprint-my-concept.png" alt="&lt;!--TODO: alt text --&gt;"></p>
+<h2>(TBD)</h2>
 <ul>
-<li>Limited info from vehicle side: Started (trigger sent), 10% (confirmation: Vehicle started), 90% (return to vehicle), 100%</li>
-<li>16 conditions to start update: Handbremse, Batterie, Türen zu, nicht am Hang geparkt, etc.</li>
+<li>Tons of edge cases: Car &amp; internet connection to car</li>
+<li>Usability test</li>
+<li>Design review in Futurice team</li>
 </ul>
-</li>
-<li>Collaborate with UI designer to create coherent user flow visuals + take opportunity &amp; fix usability problems in existing part (connection from phone to car) → Low-hanging fruit</li>
-</ul>
+<h2>Result</h2>
+<h2>What I would do better now</h2>
 <article>
     <div class="article-image">
         <img class="article-img" src="/assets/gradient-p1.jpg" alt="" />
