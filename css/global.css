@@ -173,6 +173,10 @@ article:not(:first-of-type) {
     padding: 18px;
 }
 
+.article-text h3 {
+    margin: 0px;
+}
+
 .article-button {
     display: flex;
 }
