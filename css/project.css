@@ -74,20 +74,31 @@ article {
 }
 
 .project-header.p1 {
-    background-image: url('/assets/gradient-p1.jpg');
+    background-image: url('/assets/gradient-p1.png');
 }
 
 .project-header.p2 {
-    background-image: url('/assets/gradient-p2.jpg');
+    background-image: url('/assets/gradient-p2.png');
 }
 
 .article-image {
     border-color: black;
 }
 
-/* .description.nda {
-    margin: 12px 0px;
-} */
+.text-highlight {
+    font-size: 1.1em;
+    margin: 24px 12px;
+    font-family: 'IBM Plex Sans', sans-serif;;
+}
+
+.text-highlight > span {
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    background-color: #FAE2CA;
+    display: inline;
+    padding: 0 8px;
+    color: black;
+}
 
 /* DESKTOP */
 @media (min-width: 501px) {
