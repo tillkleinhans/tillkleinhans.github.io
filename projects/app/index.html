@@ -25,11 +25,11 @@
 <!--<p class="description nda">(This project is under NDA, its content is generalized)</p>-->
 <h2>Extending a cross-device feature</h2>
 <p>As a UX designer, I was working in 2 feature teams of our client, a German car company, improving their mobile app. One team owned the feature to update the car's firmware via phone, and the latest generation cars enabled the starting and following installations by phone – functionality that should be designed and implemented in the companion app.</p>
-<p><img src="/assets/feature-flow.png" alt="&lt;!-- TODO alt text --&gt;"></p>
+<p><img src="/assets/feature-flow.png" alt="Diagram of the car firmware update process using the mobile app: 1. Download to phone, 2. Connect to car, 3. Transfer to car, 4. Start update, gap for new functionality, then last step: Update complete"></p>
 <p class="img-description">The firmware update flow, to be extended with new functionality.</p>
 <h2>Creating a clear framing first</h2>
 <p>The start was confusing, as the product owner (PO) already created a UX concept to speed up the implementation. Also, some improvements were included.</p>
-<p><img src="/assets/PO-concept.png" alt="&lt;!-- TODO alt text --&gt;"></p>
+<p><img src="/assets/PO-concept.png" alt="A blurred screenshot from the FigJam collaboration online tool, showing in-car and phone screens and boxes and post-it notes in different colors."></p>
 <p class="img-description">Screenshot of the UX concept prepared by my product owner</p>
 <p>Not being familiar with the feature yet, I first sorted the information in:</p>
 <ol>
@@ -51,46 +51,53 @@
 <li>Collaborating closely with PO &amp; tech lead to understand technical limitations and possibilities</li>
 <li>Using customer and business goals to guide discussions and compromises</li>
 </ul>
-<p><img src="/assets/design-process.png" alt="&lt;!-- TODO alt text --&gt;"></p>
-<p class="img-description">Sharing the latest state on Confluence, to make the progress transparent.</p>
+<p><img src="/assets/design-process.png" alt="A diagram of my design process from low to high fidelity: 1. User journey flow chart, 2. Flow with placeholder screens, 3. Flow with wireframes, 4. UI design using design components."></p>
+<p class="img-description">Sharing progress in every fidelity state, to increase PO's trust</p>
 <h2>Business goals VS. user goals</h2>
 <p>There are 1 main and 2 fallback options for users to update their car's firmware. The promoted option utilizes the user's phone to download the update files, saving the corporation extra cost for network traffic.</p>
-<p><img src="/assets/installation-option-I.png" alt="&lt;!-- TODO alt text --&gt;"></p>
+<p><img src="/assets/installation-option-I.png" alt="3-step diagram: 1. Downlad to phone, 2. Transfer to car, 3. Install in car."></p>
 <p class="img-description">Option I: A 3-step process using your phone</p>
 <p>However, I expected the update to be downloaded &quot;Over-The-Air&quot; (OTA) which is the fallback option, and a bounce rate of 50% on the &quot;Connect to car&quot; screen confirmed that I am not the only one confused.</p>
-<p><img src="/assets/installation-option-II.png" alt="&lt;!-- TODO alt text --&gt;"></p>
+<p><img src="/assets/installation-option-II.png" alt="2-step diagram: 1. Download to car, 2. Install in car. Added note: → 5€ per installation."></p>
 <p class="img-description">Option II: OTA updates directly to your car</p>
 <p>While OTA updates are convenient for users, it comes with an average of 5€ cellular costs per update for the manufacturer – amounting to over 1M€ due to the fleet's scale. And if users don't update either way, then the car will be updated during the next workshop visit, costing the manufacturer 100€ per installation.</p>
 <h2>Clarity for users through visual design</h2>
-<p>The data shows that the process is not intuitive, and needed to be explained better. I involved my UI design colleague earlier than usual for this project, and we co-designed the optimal way to communicate the process, current step and required user actions in a clear and consistent visual appearance.</p>
-<p><img src="/assets/feature-flow-visual-element.png" alt="&lt;!-- TODO alt text --&gt;"></p>
-<p class="img-description">Consistent visual design & clear status indicators (visuals under NDA)</p>
+<p>The data shows that the process is not intuitive, and needed to be explained better. I involved my UI design colleague earlier than usual in this project, and we co-designed the optimal way to communicate the process, current step and required user actions in a clear and consistent visual appearance.</p>
+<p><img src="/assets/feature-flow-visual-element.png" alt="Diagram showing the visual elements in the 7-step process from downloading the update files to an installed update."></p>
+<p class="img-description">Consistent visual design & clear status indicators (exact designs under NDA)</p>
 <h2>Evangelizing for usability</h2>
-<p>Copying the car's update flow, as in the PO's concept, to reduce implementation efforts entails UX problems: When starting an update in the car, installation blockers like a low battery or an open door are shown next so users can fix the issue.
-<img src="/assets/blueprint-car-only.png" alt="&lt;!--TODO: alt text --&gt;"></p>
+<p>Copying the car's update flow for less implementation efforts, as in the PO's concept, entails UX problems: In the car, when starting an update, installation blockers like a low battery or an open door are shown next so users can fix the issue.
+<img src="/assets/blueprint-car-only.png" alt="Diagram of the installation process using only the car: 1. Trigger installation, if there are blockers then 2. Show blockers and 3. Remove blockers, if no blockers exist then 4. Install."></p>
 <p class="img-description">Installation states in the car</p>
-<p><img src="/assets/blueprint-PO-concept.png" alt="&lt;!--TODO: alt text --&gt;"></p>
+<p><img src="/assets/blueprint-PO-concept.png" alt="Diagram of the installation process between phone and car, based on the car installation flow: 1. Trigger installation via phone, if there are blockers then 2. Show blockers on the phone and 3. Remove blockers in the car, if no blockers exist then 4. See installation progress on the phone."></p>
 <p class="img-description">PO's concept based on technical state model</p>
 <p>Blockers are not shown before starting an installation, which – in the mobile app – creates a disappointing experience when users see the &quot;Start update&quot; button and only learn after clicking that one of 16 issues is blocking the installation.</p>
 <p>It was necessary to work closely together with the PO and tech lead to assess what is technically possible, and to convince the PO to invest into adjusting the technical flow albeit the time pressure, to achieve this small change in the user flow:
-<img src="/assets/blueprint-my-concept.png" alt="&lt;!--TODO: alt text --&gt;"></p>
+<img src="/assets/blueprint-my-concept.png" alt="Diagram of my redesigned installation process: Before, check for blockers – if blockers exist, then 1. Show blockers on the phone and 2. Remove blockers in the car. If no blockers exist, then 3. Trigger installation and 4. See installation progress, both on the phone."></p>
 <p class="img-description">Checking for blockers in the latest transmitted car state, to show the right step</p>
 <h2>Getting the design to 100%</h2>
 <p>For the technical side, I collaborated closely with the PO and tech lead: We discovering dozens of edge cases and searched optimal compromises between implementation effort, and usability and delight.</p>
 <p>For design excellence, I gathered feedback from the project's design team in an insightful review format.</p>
-<p><img src="/assets/design-review.png" alt="&lt;!--TODO: alt text --&gt;"></p>
+<p><img src="/assets/design-review.png" alt="Screenshot of a UX design file in an online whiteboard tool, with post-it notes and comments from my design team colleagues."></p>
 <p class="img-description">Notes from the design team review</p>
-<p>We then tested the design in a scheduled usability test with 12 external people, to detect remaining unclear details in the flow.</p>
+<p>For usability, we then tested the design in a scheduled usability test with 12 external people, to detect remaining unclear details in the flow.</p>
 <h2>New and improved final design</h2>
-<p>We improved the part from downloading the update files to your phone until the update being ready for installation by small copy adjustments, and by integrating the new visual element:</p>
+<h3>Improved download &amp; transfer parts</h3>
+<p><img src="/assets/final-pt1.png" alt="Replication of 6 phone screen designs for the 6 existing steps: 1. Start download, 2. Downloading, 3. Connect to car, 4. Transferring to car, 5. Preparing in car, 6. Notification: Ready to install! The screens show the new visual element in blue, and UI components in black and grey colors."></p>
+<p class="img-description">New visual element (NDA-safe replication) showed the current step and affected devices</p>
 <ul>
-<li>Clear indicator of the current step in the update process: Download, transfer, or install phase</li>
-<li>Indicator of which devices are currently used: Phone, car, or both</li>
+<li>Step indicator shows current phase in 3-step update process</li>
+<li>Visual shows which devices are required in current step: Phone, car, or both</li>
+<li>Small title adjustments for increased transparency</li>
 </ul>
-<p><img src="/assets/final-pt1.png" alt="&lt;!--TODO: alt text --&gt;"></p>
-<p class="img-description">New visual element (replica) showed the current step and affected devices</p>
-<p><img src="/assets/final-pt2.png" alt="&lt;!--TODO: alt text --&gt;"></p>
+<h3>New installation functionality</h3>
+<p><img src="/assets/final-pt2.png" alt="Replication of 6 phone screen designs for the 6 new steps: 7. Resolve blockers, 8. Start installation, 9. Installation starting, 10. Installing (10%), 11. Almost done (90%), 12. Notification: Update complete! The screens show the new visual element in blue, and UI components in black and grey colors."></p>
 <p class="img-description">New screens with clear communication of system status and requirements</p>
+<ul>
+<li>Intuitive user flow: See &amp; resolve blockers, then start installation</li>
+<li>Clear visual representation of when the process is blocked</li>
+<li>Subtle change from states of user action (frontal car) &amp; waiting periods (3/4 car)</li>
+</ul>
 <article>
     <div class="article-image">
         <img class="article-img" src="/assets/gradient-p1.png" alt="" />
